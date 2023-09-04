@@ -345,7 +345,9 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
-"Assets/Script/Car.cs"
+"Assets/Instance/Scripts/Monster.cs"
+"Assets/Instance/Scripts/MonsterManager.cs"
+"Assets/Use Interface/Script/Car.cs"
 -langversion:9.0
 
 /deterministic
