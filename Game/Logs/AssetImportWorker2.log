@@ -1,0 +1,205 @@
+Using pre-set license
+Built from '2021.3/staging' branch; Version is '2021.3.25f1 (68ef2c4f8861) revision 6876972'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Education' Language: 'ko' Physical Memory: 16297 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.3.25f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Administrator/Desktop/Unity/Game
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+65455
+Successfully changed project path to: C:/Users/Administrator/Desktop/Unity/Game
+C:/Users/Administrator/Desktop/Unity/Game
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [1196] Host "[IP] 192.168.0.31 [Port] 0 [Flags] 2 [Guid] 1703696423 [EditorId] 1703696423 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EAQT5PO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [1196] Host "[IP] 192.168.0.31 [Port] 0 [Flags] 2 [Guid] 1703696423 [EditorId] 1703696423 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-EAQT5PO) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 60.99 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.3.25f1 (68ef2c4f8861)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity 2021.3.25f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Administrator/Desktop/Unity/Game/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1660 (ID=0x2184)
+    Vendor:   NVIDIA
+    VRAM:     5980 MB
+    Driver:   31.0.15.3623
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity 2021.3.25f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity 2021.3.25f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity 2021.3.25f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56488
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity 2021.3.25f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.003441 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 61.66 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.902 seconds
+Domain Reload Profiling:
+	ReloadAssembly (903ms)
+		BeginReloadAssembly (70ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (581ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (298ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (23ms)
+			SetupLoadedEditorAssemblies (217ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (62ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (102ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.003501 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\Administrator\Desktop\Unity\Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\Administrator\Desktop\Unity\Game\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.46 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.872 seconds
+Domain Reload Profiling:
+	ReloadAssembly (872ms)
+		BeginReloadAssembly (96ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (15ms)
+		EndReloadAssembly (690ms)
+			LoadAssemblies (68ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (287ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (41ms)
+			SetupLoadedEditorAssemblies (271ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (67ms)
+				ProcessInitializeOnLoadAttributes (178ms)
+				ProcessInitializeOnLoadMethodAttributes (16ms)
+				AfterProcessingInitializeOnLoad (5ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (4ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3056 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 24 unused Assets / (113.6 KB). Loaded Objects now: 3541.
+Memory consumption went from 197.6 MB to 197.5 MB.
+Total: 3.771500 ms (FindLiveObjects: 0.394000 ms CreateObjectMapping: 0.205000 ms MarkObjects: 2.972300 ms  DeleteObjects: 0.198600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 132288.933782 seconds.
+  path: Assets/Use Interface/ARCADE - FREE Racing Car/Textures/AFRC_Env_Mat.png
+  artifactKey: Guid(34a74330fac842a4f97649ddf77d6d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Use Interface/ARCADE - FREE Racing Car/Textures/AFRC_Env_Mat.png using Guid(34a74330fac842a4f97649ddf77d6d50) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b276f20b77156a0687bda5bc7903416') in 0.113718 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.839693 seconds.
+  path: Assets/UGUI/Textures/design-1293978_1280.png
+  artifactKey: Guid(feb5f31444e3a274e8d4009051b8bf25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UGUI/Textures/design-1293978_1280.png using Guid(feb5f31444e3a274e8d4009051b8bf25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca7674260288ffbde2de3c310a67594') in 0.105186 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.419432 seconds.
+  path: Assets/Use Interface/ARCADE - FREE Racing Car/Skybox/Night/Textures/Middle.png
+  artifactKey: Guid(0dbf12657f27a3643a08e61b84c12483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Use Interface/ARCADE - FREE Racing Car/Skybox/Night/Textures/Middle.png using Guid(0dbf12657f27a3643a08e61b84c12483) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b048f0e80797ccef6d3ca20429aa765f') in 0.022525 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.294428 seconds.
+  path: Assets/Use Interface/ARCADE - FREE Racing Car/Skybox/Night/Textures/Top.png
+  artifactKey: Guid(e4d8993639f071845bb71cdd5ccaf886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Use Interface/ARCADE - FREE Racing Car/Skybox/Night/Textures/Top.png using Guid(e4d8993639f071845bb71cdd5ccaf886) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e37a2271265ebbbadbb65adb3fe45b2') in 0.023379 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.035688 seconds.
+  path: Assets/Use Interface/ARCADE - FREE Racing Car/Skybox/Day/Textures/Top.png
+  artifactKey: Guid(0ea79d67094ea414ca3f589eeac91a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Use Interface/ARCADE - FREE Racing Car/Skybox/Day/Textures/Top.png using Guid(0ea79d67094ea414ca3f589eeac91a52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad7410302443dac1917e3139cca198d4') in 0.016073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 745.677848 seconds.
+  path: Assets/UGUI/Scripts/RoateX.cs
+  artifactKey: Guid(8e906cd706ac5b54e8ec1eca560fbc1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UGUI/Scripts/RoateX.cs using Guid(8e906cd706ac5b54e8ec1eca560fbc1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac58bf261ce79c7437b3c340c41a2774') in 0.010741 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.394655 seconds.
+  path: Assets/UGUI/Scenes/UGUI.unity
+  artifactKey: Guid(ceae6c78d33dee646a891b38ecad42b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/UGUI/Scenes/UGUI.unity using Guid(ceae6c78d33dee646a891b38ecad42b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9197c661bc17b52e46039b3e39d90e17') in 0.007229 seconds 
