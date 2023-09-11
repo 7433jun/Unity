@@ -345,13 +345,14 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Animation Clip/Scripts/AnimatorManager.cs"
+"Assets/Animation Clip/Scripts/Pallax.cs"
 "Assets/Instance/Scripts/Monster.cs"
 "Assets/Instance/Scripts/MonsterManager.cs"
 "Assets/UGUI/Scripts/EventManager.cs"
 "Assets/UGUI/Scripts/RoateX.cs"
 "Assets/UGUI/Scripts/RotateY.cs"
 "Assets/UGUI/Scripts/RotateZ.cs"
-"Assets/Use Interface/Script/Car.cs"
 -langversion:9.0
 
 /deterministic
