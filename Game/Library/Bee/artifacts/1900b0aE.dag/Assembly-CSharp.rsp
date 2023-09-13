@@ -351,6 +351,8 @@
 "Assets/Animation Retargeting/Scripts/Skeleton.cs"
 "Assets/Instance/Scripts/Monster.cs"
 "Assets/Instance/Scripts/MonsterManager.cs"
+"Assets/Physics/Scripts/BilliardBall.cs"
+"Assets/Physics/Scripts/PhysicsManager.cs"
 "Assets/UGUI/Scripts/EventManager.cs"
 "Assets/UGUI/Scripts/RoateX.cs"
 "Assets/UGUI/Scripts/RotateY.cs"
