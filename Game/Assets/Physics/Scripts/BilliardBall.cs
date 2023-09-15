@@ -6,7 +6,7 @@ public class BilliardBall : MonoBehaviour
 {
     private Vector3 direction;
     [SerializeField] float speed = 1.0f;
-    [SerializeField] Rigidbody rigidbody;
+    [SerializeField] new Rigidbody rigidbody;
 
     void FixedUpdate()
     {
