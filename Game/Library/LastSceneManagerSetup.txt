@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/File Management/Scenes/Title.unity
+- path: Assets/NavMesh Agent/Scenes/Patrol Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
