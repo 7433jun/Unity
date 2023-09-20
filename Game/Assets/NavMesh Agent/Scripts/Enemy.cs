@@ -9,10 +9,11 @@ public class Enemy : MonoBehaviour
     public Transform[] point;
     public Transform player;
     public NavMeshAgent navMeshAgent;
+    
 
     void Start()
     {
-
+        navMeshAgent.SetDestination(point[count].position);
     }
 
     void Update()
@@ -22,20 +23,29 @@ public class Enemy : MonoBehaviour
 
     public void Move()
     {
-        if (navMeshAgent.velocity == Vector3.zero)
+        if (navMeshAgent.remainingDistance <= navMeshAgent.stoppingDistance)
         {
-            if (point.Length <= count)
+            if (navMeshAgent.velocity == Vector3.zero)
             {
-                count = 0;
-            }
+                if(navMeshAgent.destination == player.position)
+                {
+                    return;
+                }
 
-            navMeshAgent.SetDestination(point[count++].position);
+                count++;
+                if (point.Length <= count)
+                {
+                    count = 0;
+                }
+
+                navMeshAgent.SetDestination(point[count].position);
+            }
         }
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("面倒");
+        Debug.Log("眠利");
     }
 
     private void OnTriggerStay(Collider other)
@@ -45,7 +55,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("面倒 场");
+        Debug.Log("眠利 场");
         navMeshAgent.SetDestination(point[count].position);
     }
 }
