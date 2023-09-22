@@ -9,7 +9,7 @@ public class Dog : Units
     
     void Start()
     {
-        hp = 100;
+        hp = 50;
         attack = 10;
         speed = 1.0f;
     }
@@ -20,6 +20,11 @@ public class Dog : Units
         {
             Walk();
         }
+
+        if (hp <= 0)
+        {
+            DieAnimation();
+        }
     }
 
     void Walk()
@@ -29,7 +34,31 @@ public class Dog : Units
 
     void Attack()
     {
+        if(otherCollider == null)
+        {
+            animator.SetTrigger("Walk");
+            isWalk = true;
+            return;
+        }
+
         otherCollider.gameObject.GetComponent<Turtle>().GetDamaged(attack);
+    }
+
+    public void GetDamaged(int damage)
+    {
+        hp -= damage;
+    }
+
+    public void DieAnimation()
+    {
+        animator.SetTrigger("Die");
+        Invoke("Die", 3f);
+    }
+
+    public void Die()
+    {
+        gameObject.SetActive(false);
+        Destroy(gameObject);
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,6 +74,7 @@ public class Dog : Units
 
     private void OnTriggerExit(Collider other)
     {
+        otherCollider = null;
         animator.SetTrigger("Walk");
         isWalk = true;
     }

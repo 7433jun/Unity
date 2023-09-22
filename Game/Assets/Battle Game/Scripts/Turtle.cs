@@ -5,6 +5,7 @@ using UnityEngine;
 public class Turtle : Units
 {
     bool isWalk = true;
+    Collider otherCollider;
 
     void Start()
     {
@@ -19,6 +20,11 @@ public class Turtle : Units
         {
             Walk();
         }
+
+        if (hp <= 0)
+        {
+            DieAnimation();
+        }
     }
 
     void Walk()
@@ -26,9 +32,27 @@ public class Turtle : Units
         transform.position += Vector3.left * speed * Time.deltaTime;
     }
 
+    void Attack()
+    {
+        if (otherCollider == null)
+        {
+            animator.SetTrigger("Walk");
+            isWalk = true;
+            return;
+        }
+
+        otherCollider.gameObject.GetComponent<Dog>().GetDamaged(attack);
+    }
+
     public void GetDamaged(int damage)
     {
         hp -= damage;
+    }
+
+    public void DieAnimation()
+    {
+        animator.SetTrigger("Die");
+        Invoke("Die", 3f);
     }
 
     public void Die()
@@ -41,8 +65,10 @@ public class Turtle : Units
     {
         if (other.CompareTag("Player"))
         {
+            otherCollider = other;
             Debug.Log("Player√Êµπ");
             isWalk = false;
+            animator.SetTrigger("Attack");
         }
     }
 
