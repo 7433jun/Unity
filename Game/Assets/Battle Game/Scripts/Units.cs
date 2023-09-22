@@ -7,5 +7,5 @@ public class Units : MonoBehaviour
     [SerializeField] protected int hp;
     [SerializeField] protected int attack;
     [SerializeField] protected float speed;
-    [SerializeField] protected new Rigidbody rigidbody;
+    [SerializeField] protected Animator animator;
 }

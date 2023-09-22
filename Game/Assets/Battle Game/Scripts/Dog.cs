@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Dog : Units
 {
+    bool isWalk = true;
+    Collider otherCollider;
     
     void Start()
     {
@@ -14,16 +16,36 @@ public class Dog : Units
 
     void Update()
     {
-        
+        if (isWalk)
+        {
+            Walk();
+        }
     }
 
     void Walk()
     {
-        rigidbody.AddForce(Vector3.right * speed * Time.deltaTime);
+        transform.position += Vector3.right * speed * Time.deltaTime;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    void Attack()
     {
-        Debug.Log("충돌");
+        otherCollider.gameObject.GetComponent<Turtle>().GetDamaged(attack);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Enemy"))
+        {
+            otherCollider = other;
+            Debug.Log("Enemy충돌");
+            isWalk = false;
+            animator.SetTrigger("Attack");
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        animator.SetTrigger("Walk");
+        isWalk = true;
     }
 }
