@@ -24,6 +24,11 @@ public class Dog : Units
     {
         if (other.CompareTag("Enemy"))
         {
+            if(otherCollider != null)
+            {
+                return;
+            }
+
             otherCollider = other;
             Debug.Log("Enemy√Êµπ");
             isWalk = false;

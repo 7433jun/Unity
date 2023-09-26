@@ -5,14 +5,15 @@ using UnityEngine;
 public class ButtonController : MonoBehaviour
 {
     [SerializeField] List<GameObject> gameObjects;
+    [SerializeField] List<Transform> transforms;
 
     public void CreateDog()
     {
-        Instantiate(gameObjects[0], new Vector3(-10, 0, 0), gameObjects[0].transform.rotation);
+        Instantiate(gameObjects[0], transforms[0].position, gameObjects[0].transform.rotation);
     }
 
     public void CreateTurtle()
     {
-        Instantiate(gameObjects[1], new Vector3(10, 0, 0), gameObjects[1].transform.rotation);
+        Instantiate(gameObjects[1], transforms[1].position, gameObjects[1].transform.rotation);
     }
 }

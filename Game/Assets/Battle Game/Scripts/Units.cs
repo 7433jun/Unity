@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 [RequireComponent(typeof(HPBar))]
 
@@ -28,13 +30,18 @@ public abstract class Units : MonoBehaviour
         {
             DieAnimation();
         }
+
+        if (gameObject.transform.position.y < -10)
+        {
+            Destroy(gameObject);
+        }
     }
 
     public abstract void Walk();
 
     public void Attack()
     {
-        if (otherCollider.gameObject.GetComponent<Units>().Hp <= 0 || otherCollider == null)
+        if (otherCollider == null && hp > 0)
         {
             animator.SetTrigger("Walk");
             isWalk = true;
@@ -42,6 +49,16 @@ public abstract class Units : MonoBehaviour
         }
 
         otherCollider.gameObject.GetComponent<Units>().GetDamaged(attack);
+
+        if (otherCollider.gameObject.GetComponent<Units>().Hp <= 0)
+        {
+            otherCollider = null;
+
+            animator.SetTrigger("Walk");
+            isWalk = true;
+        }
+
+
     }
 
     public void DieAnimation()

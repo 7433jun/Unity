@@ -352,6 +352,7 @@
 "Assets/Battle Game/Scripts/ButtonController.cs"
 "Assets/Battle Game/Scripts/Dog.cs"
 "Assets/Battle Game/Scripts/HPBar.cs"
+"Assets/Battle Game/Scripts/SceneManagement.cs"
 "Assets/Battle Game/Scripts/Turtle.cs"
 "Assets/Battle Game/Scripts/Units.cs"
 "Assets/File Management/Scripts/BronzeUnit.cs"

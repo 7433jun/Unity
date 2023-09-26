@@ -24,6 +24,11 @@ public class Turtle : Units
     {
         if (other.CompareTag("Player"))
         {
+            if (otherCollider != null)
+            {
+                return;
+            }
+
             otherCollider = other;
             Debug.Log("Player√Êµπ");
             isWalk = false;
