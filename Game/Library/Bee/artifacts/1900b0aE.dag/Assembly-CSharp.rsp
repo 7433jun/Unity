@@ -370,6 +370,8 @@
 "Assets/NavMesh Agent/Scripts/Controller.cs"
 "Assets/NavMesh Agent/Scripts/Enemy.cs"
 "Assets/NavMesh Agent/Scripts/Player.cs"
+"Assets/Object Pool/Scripts/Bullet.cs"
+"Assets/Object Pool/Scripts/ObjectPoolManager.cs"
 "Assets/Physics/Scripts/BilliardBall.cs"
 "Assets/Physics/Scripts/PhysicsManager.cs"
 "Assets/Rotation/Scripts/Observe.cs"
