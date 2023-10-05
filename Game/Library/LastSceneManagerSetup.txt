@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Object Pool/Scenes/Object Pool Scene.unity
+- path: Assets/Mouse Function/Scenes/Mouse Function Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

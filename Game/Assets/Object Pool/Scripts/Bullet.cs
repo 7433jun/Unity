@@ -6,9 +6,9 @@ public class Bullet : MonoBehaviour
 {
     [SerializeField] float speed = 5.0f;
 
-    void Start()
+    private void OnDisable()
     {
-        
+        transform.position = Vector3.zero;
     }
 
     void Update()

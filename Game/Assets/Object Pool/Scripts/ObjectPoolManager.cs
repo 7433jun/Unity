@@ -11,7 +11,7 @@ public class ObjectPoolManager : MonoBehaviour
 
     Queue<GameObject> bulletQueue = new Queue<GameObject>();
 
-    [SerializeField] int bulletCount = 5;
+    [SerializeField] int bulletCount = 20;
 
     private void Awake()
     {
@@ -44,10 +44,11 @@ public class ObjectPoolManager : MonoBehaviour
         bullet.SetActive(false);
     }
 
-    public GameObject GetQueue()
+    public GameObject GetQueue(Vector3 createPosition)
     {
         GameObject bullet = bulletQueue.Dequeue();
         bullet.SetActive(true);
+        bullet.transform.position = createPosition;
 
         return bullet;
     }
