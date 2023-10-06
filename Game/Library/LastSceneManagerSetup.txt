@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Mouse Function/Scenes/Mouse Function Scene.unity
+- path: Assets/Sound/Scenes/Sound Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
